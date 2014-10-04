@@ -1,0 +1,64 @@
+aside{
+  bottom: 6em;
+  clear: both;
+  color: red;
+  float: right;
+  font-size: 1.5em;
+  position: fixed;
+  right: 1em;
+}
+#current-question{
+  font-size: 2em;
+}
+#current-status{
+  float: right;
+}
+h1{
+  font-size: 4em;
+  text-align: center;
+}
+#main{
+  display: none;
+}
+pre{
+  background-color: #999;
+  font-size: 1.5em;
+  min-height: 200px;
+  padding: 2em;
+  text-align: left;
+  width: 250px;
+}
+#reset{
+  color: red;
+  cursor: crosshair;
+  font-size: 1.25em;
+  opacity: 0.4;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+#reset:hover{
+  opacity: 1;
+}
+#result{
+  border: 1px solid black;
+  bottom: 0;
+  float: left;
+  font-size: 1.75em;
+  height: 250px;
+  left: 0;
+  padding: 1em;
+  position: relative;
+  text-align: left;
+  width: 50%;
+}
+.tag{
+  color: red;
+  cursor: crosshair;
+  display: block;
+  font-size: 3em;
+  width: 20%;
+}
+.tag:hover{
+  color: blue;
+}
