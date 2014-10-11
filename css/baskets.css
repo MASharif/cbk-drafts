@@ -1,0 +1,64 @@
+body{
+  cursor: url(../images/tag-drop-basketball.png), auto;
+}
+.basket{
+  background: url(../images/basketball-hoop.png) no-repeat top left;
+  background-color: rgba(251,251,251,0.5);
+  border: 1px solid rgba(251,251,251,0.5);
+  clear: both;
+  display: inline-block;
+  font-size: 2em;
+  line-height: 8em;
+  min-height: 154px;
+  margin: 0.5em;
+  min-width: 180px;
+  text-align: center;
+  z-index: 10;
+}
+.basket:hover{
+  border: 1px solid orange;
+}
+#current-question{
+  font-size: 2em;
+}
+#current-status{
+  float: right;
+}
+#finished{
+  background: url(../images/outline-car.png) no-repeat top left;
+  background-size: cover;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+#instructions{
+  text-align: center;
+  top: 0;
+}
+#main{
+  margin: 2em auto;
+  padding: 2em;
+}
+#reset{
+  color: red;
+  cursor: cursor;
+  font-size: 1.25em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0.5em;
+  top: 0.5em;
+}
+#reset:hover{
+  opacity: 1;
+}
+#result, #resultSection{
+  bottom: 0;
+  font-size: 1.75em;
+  height: 100px;
+  left: 0;
+  margin-left: 35%;
+  padding: 1em;
+  position: absolute;
+  width: 50%;
+}

@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Baskets</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/baskets.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/baskets.css">
+</head>
+<body>
+
+  <div id="main" class="tag">
+
+    <header>
+      <span id="reset">Start over?</span>
+      <h3 id="instructions">Click the ball into the correct basket.</h3>
+      <h1 id="prompt">&nbsp;</h1>
+    </header>
+
+    <div id="finished">
+    </div>
+
+    <section id="baskets">
+      <!-- I wanted these to be generated randomly by the JS but the generated spans couldn't be interacted with, hence the hard-coding here. -->
+      <span class="basket">&lt;img&gt;</span>
+      <span class='basket'>&lt;a&gt;</span>
+      <span class='basket'>&lt;h1&gt;</span>
+      <span class='basket'>&lt;h6&gt;</span>
+    </section>
+
+    <section id="resultSection">
+      <meter low="0" high="3" max="4"></meter>
+      <span id="result">&nbsp;</span>
+    </section>
+  </div>
+
+</body>
+</html>
