@@ -8,10 +8,15 @@ aside{
   right: 1em;
 }
 #current-question{
+  border: 1px solid black;
   font-size: 2em;
 }
 #current-status{
   float: right;
+  font-size: 1.25em;
+  padding: 0.5em;
+  text-align: left;
+  width: 40%;
 }
 h1{
   font-size: 4em;
@@ -30,7 +35,7 @@ pre{
 }
 #reset{
   color: red;
-  cursor: crosshair;
+  cursor: pointer;
   font-size: 1.25em;
   opacity: 0.4;
   position: absolute;
@@ -41,20 +46,25 @@ pre{
   opacity: 1;
 }
 #result{
-  border: 1px solid black;
   bottom: 0;
   float: left;
-  font-size: 1.75em;
-  height: 250px;
-  left: 0;
+  font-size: 1.15em;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
   padding: 1em;
-  position: relative;
   text-align: left;
   width: 50%;
 }
+span{
+  background-color: #F0F0F0;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px #888;
+  text-align: center;
+}
 .tag{
   color: red;
-  cursor: crosshair;
+  cursor: pointer;
   display: block;
   font-size: 3em;
   width: 20%;

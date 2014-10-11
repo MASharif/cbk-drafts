@@ -4,10 +4,10 @@ $(document).ready(function(){
   var questionNumber = 0;
   var correctTags = ["<html>","<body>","<head>","<title>"];
   var shuffledTags = ["&lt;html&gt;","&lt;body&gt;","&lt;head&gt;","&lt;title&gt;"];
-  var questions = ["What is the first tag we need to start making a web page?",
-  "What tag do we need for our pictures and words?",
-  "What tag do we need for our colors and other styling?",
-  "What tag do we need for the title at the top?"];
+  var questions = ["What is the first <tag> we need to start making a web page?",
+  "Where do we place our pictures and words?",
+  "Where can we place our colors and other styling?",
+  "What <tag> do we need for the title at the top?"];
   var responsesForCorrectTagSelection = ["Correct! We start with the opening and closing <html> tags so the browser knows we're making a web page.",
   "Correct! The <body> tag is where we'll put our pictures and words.",
   "Correct! The <head> tag is where we can put our colors and other styling.",
@@ -86,11 +86,7 @@ $(document).ready(function(){
     $("#result").hide();
     $("#current-status").css({"float": "none", "margin": "0 auto", "bottom": "0em", "position": "absolute", "font-size": "2em"})
     $("h1").text("We're off to a good start!");
-    $("h1").animate({
-      opacity: 1,
-      left: "-=50",
-      fontSize : '3em'
-      }, 2500);
+    $("h1").animate({opacity: 1, left: "-=50", fontSize : '3em'}, 2500);
     $("#main").append(
       $("<aside>These four tags are all you need to set up your page.<br/>Now, you can start adding content.</aside>")
     );
