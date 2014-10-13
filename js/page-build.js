@@ -27,7 +27,7 @@ $(document).ready(function(){
     shuffle(shuffledTags);
     $.each(shuffledTags, function(tag) {
       $("#choices").append(
-        $("<span class='tag'>"+shuffledTags[tag]+"</span>")
+        $("<button class='tag'>"+shuffledTags[tag]+"</button>")
       );
     });
   }
@@ -35,7 +35,10 @@ $(document).ready(function(){
   //Show the questions in order
   function showQuestion(){
     var qToShow = questions[questionNumber];
-    $("#current-question").text(qToShow).hide().fadeIn("slow");
+    //Add new question value to input
+    $("#current-question").val(qToShow)
+    //Show new question, add animation
+    $("#current-question").hide().fadeIn("slow");
   }
 
   //Randomize tag array, from http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -84,7 +87,7 @@ $(document).ready(function(){
     $("#current-question").hide();
     $("#choices").hide();
     $("#result").hide();
-    $("#current-status").css({"float": "none", "margin": "0 auto", "bottom": "0em", "position": "absolute", "font-size": "2em"})
+    $("#current-status").addClass("current-status");
     $("h1").text("We're off to a good start!");
     $("h1").animate({opacity: 1, left: "-=50", fontSize : '3em'}, 2500);
     $("#main").append(
@@ -94,7 +97,6 @@ $(document).ready(function(){
 
   //Fire off functions in order
   function start(){
-    // $("#main").css("display", "none");
     $("#main").hide();
     $("h1").animate({
       opacity: 0.25,
@@ -102,9 +104,8 @@ $(document).ready(function(){
       fontSize : '1em'
       }, 2500);
     setTimeout(
-      function() 
-      {
-        $("#main").css("display", "block");
+      function(){
+        $("#main").show();
       }, 2500
     );//End timeout
     showTags();

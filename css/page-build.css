@@ -18,9 +18,21 @@ aside{
   text-align: left;
   width: 40%;
 }
+.current-status{
+  float: none;
+  margin: 0 auto;
+  bottom: 0em;
+  position: absolute;
+  font-size: 2em;
+}
 h1{
   font-size: 4em;
   text-align: center;
+}
+input{
+  left: 5%;
+  text-align: center;
+  width: 90%;
 }
 #main{
   display: none;

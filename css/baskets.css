@@ -18,6 +18,9 @@ body{
 .basket:hover{
   border: 1px solid orange;
 }
+.center-align{
+  text-align: center;
+}
 #current-question{
   font-size: 2em;
 }
@@ -31,6 +34,13 @@ body{
   height: 100%;
   width: 100%;
   z-index: -10;
+}
+input{
+  border: none;
+  font-size: 2em;
+  left: 5%;
+  text-align: center;
+  width: 90%;
 }
 #instructions{
   text-align: center;
@@ -61,4 +71,7 @@ body{
   padding: 1em;
   position: absolute;
   width: 50%;
+}
+.top{
+  top: 0;
 }

@@ -51,8 +51,8 @@ $(document).ready(function(){
     $("#finished").show();
     $("#instructions").hide();
     $("#baskets").text("");
-    $("#resultSection").css({"top": "0"});
-    $("header").css({"text-align": "center"});
+    $("#resultSection").addClass("top");
+    $("header").addClass("center-align");
   }
 
   //Evaluate user selection when they click a tag.
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
   //Prompt each question in the array
   function promptQuestion(){
-    $("#prompt").html(questions[questionCount]); 
+    $("#prompt").val(questions[questionCount]); 
   }
 
   //Start over
