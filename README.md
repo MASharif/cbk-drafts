@@ -8,3 +8,6 @@ A demo furthering the tag-testing idea, this time with link, image, and header t
 
 ##CSS&#8212;Borders
 A self-directed slideshow skeleton with placeholders. See it [here.](http://elainearcher.com/cbk/css-border.html)
+
+##Letter Drop
+A simple hunt-and-peck typing game. See it [here.](http://elainearcher.com/cbk/letter-drop.html)
