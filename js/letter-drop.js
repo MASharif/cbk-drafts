@@ -68,18 +68,6 @@ $(document).ready(function(){
       $("#incorrect").text(incorrect);
     }//End timer functions
 
-  //Evaluate the selected tag and act on it.
-  function evaluateInput(letter){
-    if (letter == alphabet[letterNumber]){
-      $("#"+letter).remove();
-      correct++;
-      evalStatus();
-    }
-    else{
-      incorrect++;
-    }
-  }
-
   //Clear all elements from the form
   function clearForm(){
     $("#current-letter").html("");
@@ -97,21 +85,36 @@ $(document).ready(function(){
       fontSize : "3em"
       }, 8000, function() {
         // Animation complete.
-        evalStatus();
+//Disabled this until bug figured out; now letters don't disappear until typed. Game theoretically timeless.
+        //evalStatus();
     });
   };
 
   //Is the game over?
   function evalStatus(){
     if(letterNumber===25){
-      endTimer();
-      $("#current-letter").hide();
       $("#time").text("Game over! "+endTimeString);
+      $("#correct").text(correct);
+      clearForm();
+      endTimer();
     }
     else{
       clearForm();
       letterNumber++;
       dropLetter();
+      alert("here");
+    }
+  }
+
+  //Evaluate the selected tag and act on it.
+  function evaluateInput(letter){
+    if (letter == alphabet[letterNumber]){
+      $("#"+letter).remove();
+      correct++;
+      evalStatus();
+    }
+    else{
+      incorrect++;
     }
   }
 

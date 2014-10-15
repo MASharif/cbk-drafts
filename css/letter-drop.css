@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Cutive);
+
 body{
   overflow: hidden;
 }
@@ -7,13 +10,10 @@ body{
 }
 #current-letter{
   border: 1px solid black;
+  font-family: 'Cutive', Courier, serif;
   font-size: 2em;
   height: 100%;
   width: 100%;
-}
-h1{
-  font-size: 4em;
-  text-align: center;
 }
 header{
   border: 1px solid black;
@@ -24,6 +24,10 @@ input{
   left: 5%;
   text-align: center;
   width: 90%;
+}
+.instruct{
+  font-size: 4em;
+  text-align: center;
 }
 #main{
   top: 0;
