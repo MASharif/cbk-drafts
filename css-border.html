@@ -13,8 +13,9 @@
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
-
-    <!-- Custom styles -->
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- http://jscolor.com/ -->
     <link href="css/css-border.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,6 +33,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
     <script src="js/css-border.js"></script>
+    <!-- http://jscolor.com/ -->
+    <script type="text/javascript" src="js/vendor/jscolor/jscolor.js"></script>
   </head>
 
   <body role="document">
@@ -74,35 +77,79 @@
       </section>
 
       <section id="slide-3" class="hidden">
-        <p class="right">Third</p>
+        <div class="right">
+          <p>Move the slider to change the border width.</p>
+          <input type="range" min="1" max="100" value="20"/>
+        </div>
         <figure id="slide-3-image">
-          <img src="images/border03.png">
-          <figcaption>Third.</figcaption>
+          <img src="images/mona-lisa.png">
+          <figcaption>border-value: <span id="slide-3-value">20</span>px;</figcaption>
         </figure>
       </section>
 
       <section id="slide-4" class="hidden">
-        <p class="right">Fourth</p>
+        <div class="right">
+          <p>Click a radio button to change the border type.</p>
+          <fieldset>
+            <input type="radio" id="dashed" value="dashed" name="slide4">
+            <label for="dashed">dashed</label><br>
+            <input type="radio" id="dotted" value="dotted" name="slide4">
+            <label for="dotted">dotted</label><br>
+            <input type="radio" id="double" value="double" name="slide4">
+            <label for="double">double</label><br>
+            <input type="radio" id="groove" value="groove" name="slide4">
+            <label for="groove">groove</label><br>
+            <input type="radio" id="inset" value="inset" name="slide4">
+            <label for="inset">inset</label><br>
+            <input type="radio" id="outset" value="outset" name="slide4">
+            <label for="outset">outset</label><br>
+            <input type="radio" id="ridge" value="ridge" name="slide4">
+            <label for="ridge">ridge</label><br>
+            <input type="radio" id="solid" value="solid" name="slide4" checked>
+            <label for="solid">solid</label><br>
+          </fieldset>
+        </div>
         <figure id="slide-4-image">
-          <img src="images/border04.png">
-          <figcaption>Fourth.</figcaption>
+          <img src="images/mona-lisa.png">
+          <figcaption>border-type: <span id="slide-4-value">solid</span>;</figcaption>
         </figure>
       </section>
 
       <section id="slide-5" class="hidden">
-        <p class="right">Fifth</p>
+        <div class="right">
+          <p>Click and move to change the border color.</p>
+          <input class="color"/>
+        </div>
         <figure id="slide-5-image">
-          <img src="images/border05.png">
-          <figcaption>Fifth.</figcaption>
+          <img src="images/mona-lisa.png">
+          <figcaption>border-color: #<span id="slide-5-value">000000</span>;</figcaption>
         </figure>
       </section>
 
       <section id="slide-6" class="hidden">
-        <fieldset>
-          <legend>Legend</legend>
-          <label for=field>Label</label>
-          <input id="field" style="list-style: none outside none;">
-        </fieldset>
+        <div class="right">
+          <p>We can combine all three of these values into one CSS statement.</p>
+          <input type="range" min="1" max="100" value="20"/>
+          <select>
+            <option value="dashed">dashed</option>
+            <option value="dotted">dotted</option>
+            <option value="double">double</option>
+            <option value="groove">groove</option>
+            <option value="inset">inset</option>
+            <option value="outset">outset</option>
+            <option value="ridge">ridge</option>
+            <option value="solid">solid</option>
+          </select>
+          <input class="color"/>
+        </div>
+        <figure id="slide-6-image">
+          <img src="images/mona-lisa.png">
+          <figcaption>border: 
+            <span id="slide-6-size">20</span>px&nbsp;
+            <span id="slide-6-style">solid</span>&nbsp;
+            #<span id="slide-6-color">000000</span>;
+          </figcaption>
+        </figure>
       </section>
     </div> <!-- /container -->
   </body>

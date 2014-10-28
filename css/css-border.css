@@ -67,3 +67,9 @@ nav ul{
 .theme-showcase{
   margin-top: 60px;
 }
+#slide-3-image, #slide-4-image, #slide-5-image, #slide-6-image{
+  border: 20px solid black;
+}
+#slide-3 input, #slide-4 input, #slide-5 input, #slide-6 input{
+  width: 40%;
+}

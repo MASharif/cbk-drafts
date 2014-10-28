@@ -95,6 +95,42 @@ $(document).ready(function(){
     }
   });
 
+//Individual div actions
+  //Slide 3 (border-width)
+  $("#slide-3 input[type=range]").change(function() {
+    var borderWidth = this.value;
+    $("#slide-3-image").css("border-width", borderWidth+"px");
+    $("#slide-3-value").text(borderWidth);
+  });
+  //Slide 4 (border-style)
+  $("#slide-4 input[type=radio]").change(function() {       
+    var borderStyle = this.value;
+    $("#slide-4-image").css("border-style", borderStyle);
+    $("#slide-4-value").text(borderStyle);
+  });
+  //Slide 5 (border-color)
+  $("#slide-5 input").change(function() {       
+    var borderColor = this.value;
+    $("#slide-5-image").css("border-color", "#"+borderColor);
+    $("#slide-5-value").text(borderColor);
+  });
+  //Slide 6 (border)
+  $("#slide-6 input[type=range]").change(function() {
+    var borderWidth = this.value;
+    $("#slide-6-image").css("border-width", borderWidth+"px");
+    $("#slide-6-size").text(borderWidth);
+  });
+  $("#slide-6 select").change(function() {       
+    var borderStyle = this.value;
+    $("#slide-6-image").css("border-style", borderStyle);
+    $("#slide-6-style").text(borderStyle);
+  });
+  $("#slide-6 input[class=color]").change(function() {       
+    var borderColor = this.value;
+    $("#slide-6-image").css("border-color", "#"+borderColor);
+    $("#slide-6-color").text(borderColor);
+  });
+
   //Page setup on load
   $("#prev").hide();
 
