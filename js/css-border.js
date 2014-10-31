@@ -85,13 +85,17 @@ $(document).ready(function(){
 
   //Add letter keypress on key, from http://stackoverflow.com/questions/1402698/binding-arrow-keys-in-js-jquery
   $(document).keydown(function(e){
-    if (e.keyCode == 37) { 
-      $("#next").show();
+    if (e.keyCode == 37 && slideNumber>1) { //Left arrow
       reverseSlide();
     }
-    if (e.keyCode == 39) { 
-      $("#prev").show();
+    else{
+      e.preventDefault();
+    }
+    if (e.keyCode == 39 && slideNumber<slideTotal) { //Right arrow
       advanceSlide();
+    }
+    else{
+      e.preventDefault();
     }
   });
 
