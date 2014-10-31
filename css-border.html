@@ -59,74 +59,66 @@
       <section id="slide-1">
         <p class="right">When we add pictures to our pages, we can also add a border around it.</p>
         <figure id="slide-1-image">
-          <img src="images/border01.png">
-          <figcaption><h3>An image on a page.</h3></figcaption>
-        </figure>
-      </section>
-
-      <section id="slide-2" class="hidden">
-        <p class="right">Some examples of borders we can add.</p>
-        <figure id="slide-2-image">
           <img class="active" src="images/border01.png">
           <img class="hidden" src="images/border02.png">
           <img class="hidden" src="images/border03.png">
           <img class="hidden" src="images/border04.png">
           <img class="hidden" src="images/border05.png">
-          <figcaption>Different borders.</figcaption>
+          <figcaption>Some examples of borders we can add.</figcaption>
+        </figure>
+      </section>
+
+      <section id="slide-2" class="hidden">
+        <div class="right">
+          <p>Move the slider to change the border width.</p>
+          <input type="range" min="1" max="100" value="20"/>
+        </div>
+        <figure id="slide-2-image">
+          <img src="images/mona-lisa.png">
+          <figcaption>border-value: <span id="slide-2-value">20</span>px;</figcaption>
         </figure>
       </section>
 
       <section id="slide-3" class="hidden">
         <div class="right">
-          <p>Move the slider to change the border width.</p>
-          <input type="range" min="1" max="100" value="20"/>
+          <p>Click a radio button to change the border type.</p>
+          <fieldset>
+            <input type="radio" id="dashed" value="dashed" name="slide3">
+            <label for="dashed">dashed</label><br>
+            <input type="radio" id="dotted" value="dotted" name="slide3">
+            <label for="dotted">dotted</label><br>
+            <input type="radio" id="double" value="double" name="slide3">
+            <label for="double">double</label><br>
+            <input type="radio" id="groove" value="groove" name="slide3">
+            <label for="groove">groove</label><br>
+            <input type="radio" id="inset" value="inset" name="slide3">
+            <label for="inset">inset</label><br>
+            <input type="radio" id="outset" value="outset" name="slide3">
+            <label for="outset">outset</label><br>
+            <input type="radio" id="ridge" value="ridge" name="slide3">
+            <label for="ridge">ridge</label><br>
+            <input type="radio" id="solid" value="solid" name="slide3" checked>
+            <label for="solid">solid</label><br>
+          </fieldset>
         </div>
         <figure id="slide-3-image">
           <img src="images/mona-lisa.png">
-          <figcaption>border-value: <span id="slide-3-value">20</span>px;</figcaption>
+          <figcaption>border-type: <span id="slide-3-value">solid</span>;</figcaption>
         </figure>
       </section>
 
       <section id="slide-4" class="hidden">
         <div class="right">
-          <p>Click a radio button to change the border type.</p>
-          <fieldset>
-            <input type="radio" id="dashed" value="dashed" name="slide4">
-            <label for="dashed">dashed</label><br>
-            <input type="radio" id="dotted" value="dotted" name="slide4">
-            <label for="dotted">dotted</label><br>
-            <input type="radio" id="double" value="double" name="slide4">
-            <label for="double">double</label><br>
-            <input type="radio" id="groove" value="groove" name="slide4">
-            <label for="groove">groove</label><br>
-            <input type="radio" id="inset" value="inset" name="slide4">
-            <label for="inset">inset</label><br>
-            <input type="radio" id="outset" value="outset" name="slide4">
-            <label for="outset">outset</label><br>
-            <input type="radio" id="ridge" value="ridge" name="slide4">
-            <label for="ridge">ridge</label><br>
-            <input type="radio" id="solid" value="solid" name="slide4" checked>
-            <label for="solid">solid</label><br>
-          </fieldset>
+          <p>Click and move to change the border color.</p>
+          <input class="color" value="FF0000"/>
         </div>
         <figure id="slide-4-image">
           <img src="images/mona-lisa.png">
-          <figcaption>border-type: <span id="slide-4-value">solid</span>;</figcaption>
+          <figcaption>border-color: #<span id="slide-4-value">000000</span>;</figcaption>
         </figure>
       </section>
 
       <section id="slide-5" class="hidden">
-        <div class="right">
-          <p>Click and move to change the border color.</p>
-          <input class="color"/>
-        </div>
-        <figure id="slide-5-image">
-          <img src="images/mona-lisa.png">
-          <figcaption>border-color: #<span id="slide-5-value">000000</span>;</figcaption>
-        </figure>
-      </section>
-
-      <section id="slide-6" class="hidden">
         <div class="right">
           <p>We can combine all three of these values into one CSS statement.</p>
           <input type="range" min="1" max="100" value="20"/>
@@ -140,14 +132,14 @@
             <option value="ridge">ridge</option>
             <option value="solid">solid</option>
           </select>
-          <input class="color"/>
+          <input class="color" value="FF0000"/>
         </div>
-        <figure id="slide-6-image">
+        <figure id="slide-5-image">
           <img src="images/mona-lisa.png">
           <figcaption>border: 
-            <span id="slide-6-size">20</span>px&nbsp;
-            <span id="slide-6-style">solid</span>&nbsp;
-            #<span id="slide-6-color">000000</span>;
+            <span id="slide-5-size">20</span>px
+            <span id="slide-5-style">solid</span>
+            #<span id="slide-5-color">000000</span>;
           </figcaption>
         </figure>
       </section>
