@@ -85,8 +85,6 @@ $(document).ready(function(){
       fontSize : "3em"
       }, 8000, function() {
         // Animation complete.
-//Disabled this until bug figured out; now letters don't disappear until typed. Game theoretically timeless.
-        //evalStatus();
     });
   };
 
@@ -102,7 +100,6 @@ $(document).ready(function(){
       clearForm();
       letterNumber++;
       dropLetter();
-      alert("here");
     }
   }
 
