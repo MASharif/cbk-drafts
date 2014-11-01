@@ -103,35 +103,35 @@ $(document).ready(function(){
   //Slide2 (border-width)
   $("#slide-2 input[type=range]").change(function() {
     var borderWidth = this.value;
-    $("#slide-2-image").css("border-width", borderWidth+"px");
+    $("#slide-2-image img").css("border-width", borderWidth+"px");
     $("#slide-2-value").text(borderWidth);
   });
   //Slide 3 (border-style)
   $("#slide-3 input[type=radio]").change(function() {       
     var borderStyle = this.value;
-    $("#slide-3-image").css("border-style", borderStyle);
+    $("#slide-3-image img").css("border-style", borderStyle);
     $("#slide-3-value").text(borderStyle);
   });
   //Slide 4 (border-color)
   $("#slide-4 input").change(function() {       
     var borderColor = this.value;
-    $("#slide-4-image").css("border-color", "#"+borderColor);
+    $("#slide-4-image img").css("border-color", "#"+borderColor);
     $("#slide-4-value").text(borderColor);
   });
   //Slide 5 (border)
   $("#slide-5 input[type=range]").change(function() {
     var borderWidth = this.value;
-    $("#slide-5-image").css("border-width", borderWidth+"px");
+    $("#slide-5-image img").css("border-width", borderWidth+"px");
     $("#slide-5-size").text(borderWidth);
   });
   $("#slide-5 select").change(function() {       
     var borderStyle = this.value;
-    $("#slide-5-image").css("border-style", borderStyle);
+    $("#slide-5-image img").css("border-style", borderStyle);
     $("#slide-5-style").text(borderStyle);
   });
   $("#slide-5 input[class=color]").change(function() {       
     var borderColor = this.value;
-    $("#slide-5-image").css("border-color", "#"+borderColor);
+    $("#slide-5-image img").css("border-color", "#"+borderColor);
     $("#slide-5-color").text(borderColor);
   });
 
