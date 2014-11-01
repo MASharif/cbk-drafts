@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSS&#8212;Fonts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- http://jscolor.com/ -->
+    <link href="css/css-font.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/css-font.js"></script>
+    <!-- http://jscolor.com/ -->
+    <script type="text/javascript" src="js/vendor/jscolor/jscolor.js"></script>
+  </head>
+
+  <body role="document">
+    <div class="container-fluid theme-showcase" role="main">
+
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <header class="page-header">
+            <span id="reset">Start over?</span>
+            <a class="google-fonts" href="https://www.google.com/fonts">Find more fonts.</a>
+            <br>
+            <nav>
+              <ul>
+                <li id="prev">&#8592;</li>
+                <li id="next">&#8594;</li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div><!-- End fixed navbar -->
+
+      <div id="wrap">
+        <section id="slide-1" class="col-xs-12 col-md-12">
+          <h3>We can change how the text on our page looks.</h3>
+          <figure id="slide-1-font">
+            <div class="active-font open-sans">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <div class="poiret">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <div class="lobster">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <div class="indie">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <div class="pacifico">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>Some examples of fonts we can add.</figcaption>
+          </figure>
+        </section>
+
+        <section id="slide-2" class="hidden">
+          <div class="col-xs-6 col-md-4 col-md-push-8">
+            <h3>Pick the style of the font.</h3>
+            <fieldset>
+              <input type="radio" id="normal" value="normal" name="slide2" checked><label for="normal">&nbsp;normal</label><br/>
+              <input type="radio" id="italic" value="italic" name="slide2"><label for="italic">&nbsp;italic</label><br/>
+              <input type="radio" id="oblique" value="oblique" name="slide2"><label for="oblique">&nbsp;oblique</label><br/>
+            </fieldset>
+          </div>
+          <figure class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-2-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font-style: <span id="slide-2-value">normal</span>;</figcaption>
+          </figure>
+        </section>
+
+        <section id="slide-3" class="hidden">
+          <div class="col-xs-6 col-md-4 col-md-push-8">
+            <p>Move the slider to change the font size.</p>
+            <input type="range" min="2" max="100" value="40"/>
+          </div>
+          <figure class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-3-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font-size: <span id="slide-3-value">20</span>px;</figcaption>
+          </figure>
+        </section>
+
+        <section id="slide-4" class="hidden">
+          <div class="col-xs-6 col-md-4 col-md-push-8">
+            <p>Chose a font-family for the sentence.</p>
+            <select>
+              <option value="lora" selected>lora</option>
+              <option value="open-sans">open-sans</option>
+              <option value="poiret">poiret</option>
+              <option value="lobster">lobster</option>
+              <option value="indie">indie</option>
+              <option value="pacifico">pacifico</option>
+              <option value="inconsolata">inconsolata</option>
+            </select>
+          </div>
+          <figure class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-4-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font-family: <span id="slide-4-value">"Lato"</span> serif;</figcaption>
+          </figure>
+        </section>
+
+        <section id="slide-5" class="hidden">
+          <div class="col-xs-6 col-md-4 col-md-push-8">
+            <p>We can combine all three of these values into one CSS statement.</p>
+            <fieldset>
+              <input type="radio" id="normal" value="normal" name="slide5" checked><label for="normal">&nbsp;normal</label><br/>
+              <input type="radio" id="italic" value="italic" name="slide5"><label for="italic">&nbsp;italic</label><br/>
+              <input type="radio" id="oblique" value="oblique" name="slide5"><label for="oblique">&nbsp;oblique</label><br/>
+            </fieldset>
+            <input type="range" min="2" max="100" value="40"/>
+            <select>
+              <option value="lora" selected>lora</option>
+              <option value="open-sans">open-sans</option>
+              <option value="poiret">poiret</option>
+              <option value="lobster">lobster</option>
+              <option value="indie">indie</option>
+              <option value="pacifico">pacifico</option>
+              <option value="inconsolata">inconsolata</option>
+            </select>
+          </div>
+          <figure id="slide-5-image" class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-5-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font: 
+              <span id="slide-5-style">normal</span>
+              <span id="slide-5-size">40</span>px 
+              <span id="slide-5-family">"Lora"</span> serif;
+            </figcaption>
+          </figure>
+        </section>
+      </div><!-- /wrap -->
+    </div> <!-- /container -->
+  </body>
+</html>

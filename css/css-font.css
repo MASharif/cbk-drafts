@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lora|Poiret+One|Lobster|Indie+Flower|Pacifico|Inconsolata&subset=latin-ext);
+
+/*From Bootstrap template*/
+body {
+  color: black;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+/*Own*/
+div{
+/*  font-size: 2em;
+  line-height: 2em;*/
+}
+figure{
+  text-align: center;
+}
+.google-fonts{
+  color: red;
+  cursor: pointer;
+  display: none;
+  font-size: 1.25em;
+  opacity: 0.4;
+  position: absolute;
+  right: 0.5em;
+}
+.hidden {
+  display: none;
+  z-index: -10;
+}
+.left{
+  float: left;
+  margin-left: 2em;
+  width: 40%;
+}
+nav ul{
+  list-style-image: none;
+  text-align: center;
+}
+.navbar-inverse{
+  background-color: #fff;
+  background-image: none;
+  border: none;
+  position: fixed;
+}
+#next, #prev{
+  color: red;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.25em;
+  margin: 0 10px 0 10px;
+  right: 0.5em;
+  top: 0.5em;
+}
+.page-header{
+  margin: 10px;
+  padding: 2px;
+}
+#reset{
+  color: red;
+  cursor: pointer;
+  font-size: 1.25em;
+  opacity: 0.4;
+  position: fixed;
+  left: 0.5em;
+  top: 0.5em;
+}
+#reset:hover{
+  opacity: 1;
+}
+.right{
+  float: right;
+  margin-right: 2em;
+  width: 40%;
+}
+/*#slide-1-font,*/
+#slide-2-font,
+#slide-3-font,
+#slide-4-font,
+#slide-5-font{
+  border: 1px solid black;
+  color: red;
+  font: normal 40px serif;
+  padding: 6px;
+  text-align: center;
+}
+#slide-1 figcaption,
+#slide-2 figcaption,
+#slide-3 figcaption,
+#slide-4 figcaption,
+#slide-5 figcaption{
+  background-color: yellow;
+  border: 1px solid black;
+  font: normal 40px serif;
+  padding: 6px;
+  text-align: center;
+}
+#slide-2-font, #slide-3-font, #slide-4-font, #slide-5-font{
+}
+#slide-2 input, #slide-3 input, #slide-4 input{
+  width: 40%;
+}
+#slide-1, #slide-1-font{
+  margin-top: 0 auto;
+  text-align: center;
+}
+.theme-showcase{
+  margin-top: 60px;
+}
+/*Fonts*/
+.open-sans{font-family: 'Open Sans Condensed', sans-serif !important;}
+.lora{font-family: 'Lora', serif !important;}
+.poiret{font-family: 'Poiret One', cursive !important;}
+.lobster{font-family: 'Lobster', cursive !important;}
+.indie{font-family: 'Indie Flower', cursive !important;}
+.pacifico{font-family: 'Pacifico', cursive !important;}
+.inconsolata{font-family: 'Inconsolata', serif !important;}
+.active-font{color: red;}
+.capitalize{text-transform:capitalize;}

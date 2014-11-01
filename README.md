@@ -6,8 +6,11 @@
 ##Baskets
 [A demo furthering the tag-testing idea, this time with link, image, and header tags.](http://elainearcher.com/cbk/baskets.html)
 
-##CSS&#8212;Borders
+##CSS&#8212;Border
 [An interactive self-directed slideshow about border values.](http://elainearcher.com/cbk/css-border.html)
+
+##CSS&#8212;Font
+[An interactive self-directed slideshow about font values.](http://elainearcher.com/cbk/css-font.html)
 
 ##Letter Drop
 [A simple hunt-and-peck typing game.](http://elainearcher.com/cbk/letter-drop.html)
