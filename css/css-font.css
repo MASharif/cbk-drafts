@@ -19,9 +19,8 @@ body {
 }
 
 /*Own*/
-div{
-/*  font-size: 2em;
-  line-height: 2em;*/
+figcaption{
+  margin-top: 2em;
 }
 figure{
   text-align: center;
@@ -34,6 +33,12 @@ figure{
   opacity: 0.4;
   position: absolute;
   right: 0.5em;
+}
+h3{
+  margin-bottom: 1em;
+  text-align: left;
+  text-indent: 2em;
+  text-indent: 3vw;
 }
 .hidden {
   display: none;
@@ -100,11 +105,13 @@ nav ul{
 #slide-3 figcaption,
 #slide-4 figcaption,
 #slide-5 figcaption{
-  background-color: yellow;
+  background-color: rgba(255,255,0,0.3);
   border: 1px solid black;
   font: normal 40px serif;
   padding: 6px;
-  text-align: center;
+  text-align: left;
+  text-indent: 2em;
+  text-indent: 3vw;
 }
 #slide-2-font, #slide-3-font, #slide-4-font, #slide-5-font{
 }
@@ -112,6 +119,8 @@ nav ul{
   width: 40%;
 }
 #slide-1, #slide-1-font{
+  font-size: 1.75em;
+  font-size: 2.5vw;
   margin-top: 0 auto;
   text-align: center;
 }
@@ -127,4 +136,4 @@ nav ul{
 .pacifico{font-family: 'Pacifico', cursive !important;}
 .inconsolata{font-family: 'Inconsolata', serif !important;}
 .active-font{color: red;}
-.capitalize{text-transform:capitalize;}
+.capitalize{text-transform: capitalize;}
