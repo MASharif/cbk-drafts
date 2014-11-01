@@ -5,9 +5,12 @@ body{
   margin: 2% 5% 5% 3%;
 }
 .main{
-  border: 2px double black;
+  border: 4px double black;
   padding: 1em 2em;
 }
 a{
   text-decoration: none;
+}
+.demo, .alpha{
+  margin-left: 3em;
 }
