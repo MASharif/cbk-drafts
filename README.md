@@ -27,3 +27,6 @@
 
 >###Color Changer
 >[Page changes color with mouse movements, allowing rgb color selection on click.](http://elainearcher.com/cbk/color-changer.html)
+
+>###Color Changer (Opacity)
+>[Same as above, but also allows opacity change (rgba).](http://elainearcher.com/cbk/color-changer-opacity.html)
