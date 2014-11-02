@@ -23,8 +23,9 @@ $(document).ready(function(){
 
   //Change background color, text
   function changeBackgroundColor(r, g, b, backgroundColorOpacity){
-    $("body").css({"background-color": "rgba("+ r +","+
-    g +","+ b +"," + backgroundColorOpacity +")"});
+    $("body").css({"background-color": "rgba("+ r +","+g +","+ b +"," + backgroundColorOpacity +")",
+      "text-shadow": "2px 2px rgba("+ (1+r) +","+ (1+g) +","+ (1+b) +"," + backgroundColorOpacity +")",
+      "color": "rgba("+ (255-r) +","+ (255-g) +","+ (255-b) +"," + backgroundColorOpacity +")"});
     $("#currentColor").text("rgba("+ r +","+g +","+ b);
     $("#currentColorOpacity").text("," + backgroundColorOpacity +")");
   }
@@ -34,24 +35,20 @@ $(document).ready(function(){
     $("#currentColor").addClass("currentColor");
     $("#currentColorOpacity").addClass("currentColor");
     $("body").unbind("mouseenter mouseleave mousemove");
-    opacityArea();
-  });
-
-  //Show opacity options
-  function opacityArea(){
+    //Show opacity options
     $("#opacityArea").show();
-  }
+  });
 
   //This seems like a good candidate for refactoring.
   $("#opacityArea input[type=range]").change(function() {       
     var backgroundColorOpacity = this.value;
+    //Get # values of current background color
     var backgroundColorCurrent = $("body").css("backgroundColor");
     var backgroundColorCurrent = backgroundColorCurrent.split(/\s*,\s*/);
     var r = backgroundColorCurrent[0].match(/\d+/);
     var g = backgroundColorCurrent[1];
     var b = backgroundColorCurrent[2].match(/\d+/);
     changeBackgroundColor(r, g, b, backgroundColorOpacity);
-
   });
 
   //Start over
