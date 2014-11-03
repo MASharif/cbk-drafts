@@ -72,7 +72,7 @@
         <section id="slide-2" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
             <h3>Pick the style of the font.</h3>
-            <fieldset>
+            <fieldset class="radio">
               <input type="radio" id="normal" value="normal" name="slide2" checked><label for="normal">&nbsp;normal</label><br/>
               <input type="radio" id="italic" value="italic" name="slide2"><label for="italic">&nbsp;italic</label><br/>
               <input type="radio" id="oblique" value="oblique" name="slide2"><label for="oblique">&nbsp;oblique</label><br/>
@@ -98,7 +98,7 @@
         <section id="slide-4" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
             <p>Chose a font-family for the sentence.</p>
-            <select>
+            <select multiple class="form-control input-lg">
               <option value="lora" selected>lora</option>
               <option value="open-sans">open-sans</option>
               <option value="poiret">poiret</option>
@@ -117,13 +117,13 @@
         <section id="slide-5" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
             <p>We can combine all three of these values into one CSS statement.</p>
-            <fieldset>
+            <fieldset class="radio">
               <input type="radio" id="normal" value="normal" name="slide5" checked><label for="normal">&nbsp;normal</label><br/>
               <input type="radio" id="italic" value="italic" name="slide5"><label for="italic">&nbsp;italic</label><br/>
               <input type="radio" id="oblique" value="oblique" name="slide5"><label for="oblique">&nbsp;oblique</label><br/>
             </fieldset>
-            <input type="range" min="2" max="100" value="40"/>
-            <select>
+            <input type="range" min="2" max="100" value="40"/><br/>
+            <select multiple class="form-control input-lg">
               <option value="lora" selected>lora</option>
               <option value="open-sans">open-sans</option>
               <option value="poiret">poiret</option>
