@@ -30,3 +30,6 @@
 
 >###Color Changer (Opacity)
 >[Same as above, but also allows opacity change (rgba).](http://elainearcher.com/cbk/color-changer-opacity.html)
+
+>###Color Changer (Mobile)
+>[4 sliders allow user to change rgba values, see page background change.](http://elainearcher.com/cbk/color-changer-mobile.html)
