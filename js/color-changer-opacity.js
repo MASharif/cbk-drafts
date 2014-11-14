@@ -7,7 +7,6 @@ $(document).ready(function(){
     positionToNumber(r, g, b);
   });
 
-
   function positionToNumber(r, g, b){
     while (r > 256){
       r = (r-256)
@@ -23,9 +22,7 @@ $(document).ready(function(){
 
   //Change background color, text
   function changeBackgroundColor(r, g, b, backgroundColorOpacity){
-    $("body").css({"background-color": "rgba("+ r +","+g +","+ b +"," + backgroundColorOpacity +")",
-      "text-shadow": "2px 2px rgba("+ (1+r) +","+ (1+g) +","+ (1+b) +"," + backgroundColorOpacity +")",
-      "color": "rgba("+ (255-r) +","+ (255-g) +","+ (255-b) +"," + backgroundColorOpacity +")"});
+    $("body").css({"background-color": "rgba("+ r +","+g +","+ b +"," + backgroundColorOpacity +")"});
     $("#currentColor").text("rgba("+ r +","+g +","+ b);
     $("#currentColorOpacity").text("," + backgroundColorOpacity +")");
   }
