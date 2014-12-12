@@ -1,9 +1,9 @@
 $(document).ready(function(){
   var backgroundColorOpacity = 1.0;
-  $("body").on( "mousemove", function(position){
+  $("body").mousemove(function(position){
     var r = position.pageX;
     var g = position.pageY;
-    var b = r+g;
+    var b = Math.round((r+g));
     positionToNumber(r, g, b);
   });
 
@@ -17,11 +17,11 @@ $(document).ready(function(){
     while (b > 256){
       b = (b-256)
     }
-    changeBackgroundColor(r, g, b, backgroundColorOpacity);
+    changeBackgroundColor(r, g, b);
   }
 
   //Change background color, text
-  function changeBackgroundColor(r, g, b, backgroundColorOpacity){
+  function changeBackgroundColor(r, g, b){
     $("body").css({"background-color": "rgba("+ r +","+g +","+ b +"," + backgroundColorOpacity +")"});
     $("#currentColor").text("rgba("+ r +","+g +","+ b);
     $("#currentColorOpacity").text("," + backgroundColorOpacity +")");
