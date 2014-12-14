@@ -21,6 +21,9 @@
 >###CSS&#8212;Font
 >[An interactive self-directed slideshow about font values.](http://elainearcher.com/cbk/css-font.html)
 
+>###CSS&#8212;Image Size
+>[An interactive self-directed slideshow about image size values.](http://elainearcher.com/cbk/css-image-size.html)
+
 >###Letter Drop
 >[A simple hunt-and-peck typing game.](http://elainearcher.com/cbk/letter-drop.html)
 <br/>
