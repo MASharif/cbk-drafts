@@ -126,16 +126,16 @@ $(document).ready(function(){
     $("#slide-6-value").text(hHeight);
   });
   //Slide7 is text
-  //Slide8 (width and height)
-  $("#slide-8-width-input").change(function() {
-    var eightWidth = this.value;
-    $("#slide-8-image img").css("width", eightWidth+"px");
-    $("#slide-8-value").text(eightWidth);
-  });
+  //Slide8 (height and width)
   $("#slide-8-height-input").change(function() {
     var eightHeight = this.value;
     $("#slide-8-image img").css("height", eightHeight+"px");
-    $("#slide-8-value").text(eightHeight);
+    $("#slide-8-height-value").text(eightHeight);
+  });
+  $("#slide-8-width-input").change(function() {
+    var eightWidth = this.value;
+    $("#slide-8-image img").css("width", eightWidth+"px");
+    $("#slide-8-width-value").text(eightWidth);
   });
 
   //Page setup on load
