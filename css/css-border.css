@@ -86,3 +86,16 @@ nav ul{
 #slide-2 input, #slide-3 input, #slide-4 input, #slide-5 input{
   width: 40%;
 }
+
+
+/*To flush footer to bottom*/
+footer {
+  bottom: 0;
+  clear: both;
+  display: block;
+  float: right;
+  height: 50px;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+} 
