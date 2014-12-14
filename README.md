@@ -8,6 +8,9 @@
 >###Baskets
 >[A demo furthering the tag-testing idea, this time with link, image, and header tags.](http://elainearcher.com/cbk/baskets.html)
 <br/>
+
+>###Color Changer (Mobile)
+>[4 sliders allow user to change rgba values, see page background change.](http://elainearcher.com/cbk/color-changer-mobile.html)
 ***
 
 ##Alpha testing
@@ -30,6 +33,3 @@
 
 >###Color Changer (Opacity)
 >[Same as above, but also allows opacity change (rgba).](http://elainearcher.com/cbk/color-changer-opacity.html)
-
->###Color Changer (Mobile)
->[4 sliders allow user to change rgba values, see page background change.](http://elainearcher.com/cbk/color-changer-mobile.html)
