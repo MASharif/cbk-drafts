@@ -115,10 +115,11 @@ $(document).ready(function(){
     $("#slide-3-value").text(fontSize);
   });
   //Slide 4 (font-family)
-  $("#slide-4 select").change(function() {       
-    var fontFamily = this.value;
+  $("#slide-4 select").change(function() {     
+    var fontFamily = this.value;       
+    var fontFamilyName = $(this).find('option:selected').text(); 
     $("#slide-4-font").removeClass().addClass(fontFamily);
-    $("#slide-4-value").text("\""+fontFamily+"\"").addClass("capitalize");
+    $("#slide-4-value").text("\""+fontFamilyName+"\"").addClass("capitalize");
   });
   //Slide 5 (font)
   $("#slide-5 input[type=radio]").change(function() {
