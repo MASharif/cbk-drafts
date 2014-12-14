@@ -103,10 +103,34 @@ nav ul{
 #slide-3-image img{
   max-height: 20px;
 }
-#slide-2-image img, #slide-3-image img, #slide-4-image img, #slide-5-image img{
+#slide-5-image img{
+  width: 20px;
+}
+#slide-6-image img{
+  height: 20px;
+}
+#slide-8-image img{
+  height: 20px;
+  width: 20px;
+}
+#slide-2-image img, #slide-3-image img, #slide-5-image img, #slide-6-image img, #slide-8-image img{
   /*border: 20px solid #FF0000;*/
+  margin: 0 auto;
   text-align: center;
 }
-#slide-2 input, #slide-3 input, #slide-4 input, #slide-5 input{
+#slide-2 input, #slide-3 input, #slide-5 input, #slide-6 input, #slide-8 input{
   width: 40%;
 }
+
+
+/*To flush footer to bottom*/
+footer {
+  bottom: 0;
+  clear: both;
+  display: block;
+  float: right;
+  height: 50px;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+} 

@@ -3,7 +3,7 @@ $(document).ready(function(){
   //Set variables
   var slide1number = 1;
   var slideNumber = 1;
-  var slideTotal = 3;
+  var slideTotal = 8;
 
   //Flip through border samples in slide 2.
   function rotateImages(){
@@ -111,6 +111,31 @@ $(document).ready(function(){
     var maxHeight = this.value;
     $("#slide-3-image img").css("max-height", maxHeight+"px");
     $("#slide-3-value").text(maxHeight);
+  });
+  //Slide4 is text
+  //Slide5 (width)
+  $("#slide-5 input[type=range]").change(function() {
+    var wWidth = this.value;
+    $("#slide-5-image img").css("width", wWidth+"px");
+    $("#slide-5-value").text(wWidth);
+  });
+  //Slide6 (height)
+  $("#slide-6 input[type=range]").change(function() {
+    var hHeight = this.value;
+    $("#slide-6-image img").css("height", hHeight+"px");
+    $("#slide-6-value").text(hHeight);
+  });
+  //Slide7 is text
+  //Slide8 (width and height)
+  $("#slide-8-width-input").change(function() {
+    var eightWidth = this.value;
+    $("#slide-8-image img").css("width", eightWidth+"px");
+    $("#slide-8-value").text(eightWidth);
+  });
+  $("#slide-8-height-input").change(function() {
+    var eightHeight = this.value;
+    $("#slide-8-image img").css("height", eightHeight+"px");
+    $("#slide-8-value").text(eightHeight);
   });
 
   //Page setup on load
