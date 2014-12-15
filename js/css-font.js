@@ -132,10 +132,11 @@ $(document).ready(function(){
     $("#slide-5-font").css("font-size", fontSize+"px");
     $("#slide-5-size").text(fontSize);
   });
-  $("#slide-5 select").change(function() {       
-    var fontFamily = this.value;
-    $("#slide-5-font").removeClass().addClass(fontFamily);
-    $("#slide-5-family").text("\""+fontFamily+"\"").addClass("capitalize");
+  $("#slide-5 select").change(function() {     
+    var fontFamily5 = this.value;       
+    var fontFamilyName5 = $(this).find('option:selected').text(); 
+    $("#slide-5-font").removeClass().addClass(fontFamily5);
+    $("#slide-5-family").text("\""+fontFamilyName5+"\"").addClass("capitalize");
   });
 
   //Page setup on load
