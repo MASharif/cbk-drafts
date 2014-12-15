@@ -90,12 +90,13 @@ nav ul{
 .theme-showcase{
   margin-top: 60px;
 }
-#slide-1 figcaption{
-  float: right;
-  margin: 4em 0 0 1em;
+#slide-1 h4{
+  display: block;
+  text-align: center;
+  width: 100%;
 }
-#slide-1 figcaption:before{
-  content: "\21D0";
+#slide-1 h4:before, #slide-1 h4:after{
+  content: "\21D3";
 }
 #slide-2-image img{
   max-width: 20px;
@@ -114,14 +115,12 @@ nav ul{
   width: 20px;
 }
 #slide-2-image img, #slide-3-image img, #slide-5-image img, #slide-6-image img, #slide-8-image img{
-  /*border: 20px solid #FF0000;*/
   margin: 0 auto;
   text-align: center;
 }
 #slide-2 input, #slide-3 input, #slide-5 input, #slide-6 input, #slide-8 input{
   width: 40%;
 }
-
 
 /*To flush footer to bottom*/
 footer {
