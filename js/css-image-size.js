@@ -3,7 +3,7 @@ $(document).ready(function(){
   //Set variables
   var slide1number = 1;
   var slideNumber = 1;
-  var slideTotal = 8;
+  var slideTotal = 9;
 
   //Flip through border samples in slide 2.
   function rotateImages(){
