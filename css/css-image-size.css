@@ -140,7 +140,17 @@ footer {
   display: block;
   float: right;
   height: 50px;
-  margin-right: 5%;
+  margin: 0 5%;
   position: absolute;
   right: 0;
+}
+
+@media screen and (max-width: 480px){
+  footer{
+    position: relative;
+    width: 100%;
+  }
+  section{
+    min-height: 400px !important; /*!important to over-ride Bootstrap*/
+  }
 }
