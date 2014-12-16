@@ -95,6 +95,23 @@ nav ul{
   margin-top: 60px;
 }
 
+/*Input styling*/
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: red;
+    height: 14px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: black;
+    border-radius: 14px;
+    height: 20px;
+    width: 20px;
+}
+#slide-2 input, #slide-3 input, #slide-5 input, #slide-6 input, #slide-8 input{
+  width: 80%;
+}
+
 /*Slide-specific styling*/
 #slide-1 h4{
   display: block;
@@ -123,9 +140,6 @@ nav ul{
 #slide-2-image img, #slide-3-image img, #slide-5-image img, #slide-6-image img, #slide-8-image img{
   margin: 0 auto;
   text-align: center;
-}
-#slide-2 input, #slide-3 input, #slide-5 input, #slide-6 input, #slide-8 input{
-  width: 40%;
 }
 #slide-9 figure{
   max-width: 33%;
