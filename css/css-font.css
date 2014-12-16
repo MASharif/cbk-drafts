@@ -44,10 +44,13 @@ h3{
   display: none;
   z-index: -10;
 }
+
+/*Input styling*/
 input[type='range'] {
     -webkit-appearance: none !important;
     background: red;
     height: 14px;
+    width: 80%;
 }
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
@@ -56,6 +59,7 @@ input[type='range']::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
 }
+
 .left{
   float: left;
   margin-left: 2em;
