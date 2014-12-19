@@ -128,29 +128,23 @@ input[type='range']::-webkit-slider-thumb {
   max-height: 20px;
 }
 #slide-5-image img{
-  width: 20px;
-}
-#slide-6-image img{
-  height: 20px;
-}
-#slide-8-image img{
   height: 20px;
   width: 20px;
 }
-#slide-2-image img, #slide-3-image img, #slide-5-image img, #slide-6-image img, #slide-8-image img{
+#slide-2-image img, #slide-3-image img, #slide-5-image img{
   margin: 0 auto;
   text-align: center;
 }
-#slide-9 figure{
+#slide-6 figure{
   max-width: 33%;
 }
-#slide-9 figcaption{
+#slide-6 figcaption{
   min-height: 50px;
 }
-#slide-9-image-2 img{
+#slide-6-image-2 img{
   max-width: 200px;
 }
-#slide-9-image-3 img{
+#slide-6-image-3 img{
   width: 200px;
 }
 

@@ -3,7 +3,7 @@ $(document).ready(function(){
   //Set variables
   var slide1number = 1;
   var slideNumber = 1;
-  var slideTotal = 9;
+  var slideTotal = 6;
 
   //Flip through border samples in slide 2.
   function rotateImages(){
@@ -106,38 +106,25 @@ $(document).ready(function(){
     $("#slide-2-image img").css("max-width", maxWidth+"px");
     $("#slide-2-value").text(maxWidth);
   });
-  //Slide2 (max-height)
+  //Slide3 (max-height)
   $("#slide-3 input[type=range]").change(function() {
     var maxHeight = this.value;
     $("#slide-3-image img").css("max-height", maxHeight+"px");
     $("#slide-3-value").text(maxHeight);
   });
   //Slide4 is text
-  //Slide5 (width)
-  $("#slide-5 input[type=range]").change(function() {
-    var wWidth = this.value;
-    $("#slide-5-image img").css("width", wWidth+"px");
-    $("#slide-5-value").text(wWidth);
+  //Slide5 (height and width)
+  $("#slide-5-height-input").change(function() {
+    var fiveHeight = this.value;
+    $("#slide-5-image img").css("height", fiveHeight+"px");
+    $("#slide-5-height-value").text(fiveHeight);
   });
-  //Slide6 (height)
-  $("#slide-6 input[type=range]").change(function() {
-    var hHeight = this.value;
-    $("#slide-6-image img").css("height", hHeight+"px");
-    $("#slide-6-value").text(hHeight);
+  $("#slide-5-width-input").change(function() {
+    var fiveWidth = this.value;
+    $("#slide-5-image img").css("width", fiveWidth+"px");
+    $("#slide-5-width-value").text(fiveWidth);
   });
-  //Slide7 is text
-  //Slide8 (height and width)
-  $("#slide-8-height-input").change(function() {
-    var eightHeight = this.value;
-    $("#slide-8-image img").css("height", eightHeight+"px");
-    $("#slide-8-height-value").text(eightHeight);
-  });
-  $("#slide-8-width-input").change(function() {
-    var eightWidth = this.value;
-    $("#slide-8-image img").css("width", eightWidth+"px");
-    $("#slide-8-width-value").text(eightWidth);
-  });
-
+  //Slide6 is text
   //Page setup on load
   $("#prev").hide();
 
