@@ -61,18 +61,12 @@
         <!-- End slide 1 -->
 
         <!-- Slide 2 -->
-        <section id="slide-2" class="hidden">
-          <div class="col-xs-6 col-md-4 col-md-push-8">
-            <h3>Pick the style of the font.</h3>
-            <fieldset class="radio">
-              <input type="radio" id="normal" value="normal" name="slide2" checked><label for="normal">&nbsp;normal</label><br/>
-              <input type="radio" id="italic" value="italic" name="slide2"><label for="italic">&nbsp;italic</label><br/>
-              <input type="radio" id="oblique" value="oblique" name="slide2"><label for="oblique">&nbsp;oblique</label><br/>
-            </fieldset>
-          </div>
-          <figure class="col-xs-12 col-md-8 col-md-pull-4">
-            <div id="slide-2-font">I'm gonna swing from the chandelier, from the chandelier.</div>
-            <figcaption>font-style: <span id="slide-2-value">normal</span>;</figcaption>
+        <section id="slide-2" class="col-xs-12 col-md-12">
+          <h3>To use these fonts, we have to tell our CSS where the fonts can be found.</h3>
+          <figure id="slide-2-font">
+            <h4>We need to add this:</h4>
+            <figcaption>@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lora|Poiret+One|Lobster|Indie+Flower|Pacifico|Inconsolata&subset=latin-ext);</figcaption>
+            <h4>to the top of our styles.</h4>
           </figure>
         </section>
         <!-- End slide 2 -->
@@ -80,18 +74,35 @@
         <!-- Slide 3 -->
         <section id="slide-3" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
-            <p>Move the slider to change the font size.</p>
-            <input type="range" min="2" max="100" value="40"/>
+            <h3>Pick the style of the font.</h3>
+            <fieldset class="radio">
+              <input type="radio" id="normal" value="normal" name="slide3" checked><label for="normal">&nbsp;normal</label><br/>
+              <input type="radio" id="italic" value="italic" name="slide3"><label for="italic">&nbsp;italic</label><br/>
+              <input type="radio" id="oblique" value="oblique" name="slide3"><label for="oblique">&nbsp;oblique</label><br/>
+            </fieldset>
           </div>
           <figure class="col-xs-12 col-md-8 col-md-pull-4">
             <div id="slide-3-font">I'm gonna swing from the chandelier, from the chandelier.</div>
-            <figcaption>font-size: <span id="slide-3-value">20</span>px;</figcaption>
+            <figcaption>font-style: <span id="slide-3-value">normal</span>;</figcaption>
           </figure>
         </section>
         <!-- End slide 3 -->
 
         <!-- Slide 4 -->
         <section id="slide-4" class="hidden">
+          <div class="col-xs-6 col-md-4 col-md-push-8">
+            <p>Move the slider to change the font size.</p>
+            <input type="range" min="2" max="100" value="40"/>
+          </div>
+          <figure class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-4-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font-size: <span id="slide-4-value">20</span>px;</figcaption>
+          </figure>
+        </section>
+        <!-- End slide 4 -->
+
+        <!-- Slide 5 -->
+        <section id="slide-5" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
             <p>Chose a font-family for the sentence.</p>
             <select multiple class="form-control input-lg">
@@ -105,20 +116,20 @@
             </select>
           </div>
           <figure class="col-xs-12 col-md-8 col-md-pull-4">
-            <div id="slide-4-font">I'm gonna swing from the chandelier, from the chandelier.</div>
-            <figcaption>font-family: <span id="slide-4-value">"Lora"</span> serif;</figcaption>
+            <div id="slide-5-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+            <figcaption>font-family: <span id="slide-5-value">"Lora"</span> serif;</figcaption>
           </figure>
         </section>
-        <!-- End slide 4 -->
+        <!-- End slide 5 -->
 
-        <!-- Slide 5 -->
-        <section id="slide-5" class="hidden">
+        <!-- Slide 6 -->
+        <section id="slide-6" class="hidden">
           <div class="col-xs-6 col-md-4 col-md-push-8">
             <p>We can combine all three of these values into one CSS statement.</p>
             <fieldset class="radio">
-              <input type="radio" id="normal" value="normal" name="slide5" checked><label for="normal">&nbsp;normal</label><br/>
-              <input type="radio" id="italic" value="italic" name="slide5"><label for="italic">&nbsp;italic</label><br/>
-              <input type="radio" id="oblique" value="oblique" name="slide5"><label for="oblique">&nbsp;oblique</label><br/>
+              <input type="radio" id="normal" value="normal" name="slide6" checked><label for="normal">&nbsp;normal</label><br/>
+              <input type="radio" id="italic" value="italic" name="slide6"><label for="italic">&nbsp;italic</label><br/>
+              <input type="radio" id="oblique" value="oblique" name="slide6"><label for="oblique">&nbsp;oblique</label><br/>
             </fieldset>
             <input type="range" min="2" max="100" value="40"/><br/>
             <select multiple class="form-control input-lg">
@@ -131,16 +142,16 @@
               <option value="inconsolata" data-name="Inconsolata">Inconsolata</option>
             </select>
           </div>
-          <figure id="slide-5-image" class="col-xs-12 col-md-8 col-md-pull-4">
-            <div id="slide-5-font">I'm gonna swing from the chandelier, from the chandelier.</div>
+          <figure id="slide-6-image" class="col-xs-12 col-md-8 col-md-pull-4">
+            <div id="slide-6-font">I'm gonna swing from the chandelier, from the chandelier.</div>
             <figcaption>font: 
-              <span id="slide-5-style">normal</span>
-              <span id="slide-5-size">40</span>px 
-              <span id="slide-5-family">"Lora"</span> serif;
+              <span id="slide-6-style">normal</span>
+              <span id="slide-6-size">40</span>px 
+              <span id="slide-6-family">"Lora"</span> serif;
             </figcaption>
           </figure>
         </section>
-        <!-- End slide 5 -->
+        <!-- End slide 6 -->
       </div><!-- /wrap -->
     </div> <!-- /container -->
 
