@@ -4,13 +4,12 @@ body{
 .basket{
   background: url(../images/basketball-hoop.png) no-repeat top left;
   background-color: rgba(251,251,251,0.5);
-  border: 1px solid rgba(251,251,251,0.5);
-  clear: both;
+  border: 1px solid rgba(151,151,151,1);
   display: inline-block;
   font-size: 2em;
   line-height: 8em;
+  margin: 1px;
   min-height: 154px;
-  margin: 0.5em;
   min-width: 180px;
   text-align: center;
   z-index: 10;
@@ -63,15 +62,23 @@ input{
   opacity: 1;
 }
 #result, #resultSection{
-  bottom: 0;
+  clear: both;
   font-size: 1.75em;
   height: 100px;
-  left: 0;
-  margin-left: 35%;
+  margin: 0 auto;
   padding: 1em;
-  position: absolute;
-  width: 50%;
+  text-align: center;
+}
+.tag-text{
+  background-color: rgba(255, 153, 0, 0.5);
 }
 .top{
   top: 0;
+}
+
+
+@media screen and (min-width: 900px){
+  #baskets{
+    margin-left: 10%;
+  }
 }
