@@ -3,7 +3,7 @@ $(document).ready(function(){
   //Set variables
   var slide1number = 1;
   var slideNumber = 1;
-  var slideTotal = 5;
+  var slideTotal = 6;
 
   //Flip through font samples in slide 1.
   function rotateEmphasis(){
@@ -102,41 +102,42 @@ $(document).ready(function(){
   });
 
 //Individual div actions
-  //Slide2 (font-style)
-  $("#slide-2 input[type=radio]").change(function() {
+  //Slide1 and Slide2 are text
+  //Slide3 (font-style)
+  $("#slide-3 input[type=radio]").change(function() {
     var fontStyle = this.value;
-    $("#slide-2-font").css("font-style", fontStyle);
-    $("#slide-2-value").text(fontStyle);
+    $("#slide-3-font").css("font-style", fontStyle);
+    $("#slide-3-value").text(fontStyle);
   });
-  //Slide 3 (font-size)
-  $("#slide-3 input[type=range]").change(function() {       
+  //Slide 4 (font-size)
+  $("#slide-4 input[type=range]").change(function() {       
     var fontSize = this.value;
-    $("#slide-3-font").css("font-size", fontSize+"px");
-    $("#slide-3-value").text(fontSize);
+    $("#slide-4-font").css("font-size", fontSize+"px");
+    $("#slide-4-value").text(fontSize);
   });
-  //Slide 4 (font-family)
-  $("#slide-4 select").change(function() {     
+  //Slide 5 (font-family)
+  $("#slide-5 select").change(function() {     
     var fontFamily = this.value;       
     var fontFamilyName = $(this).find('option:selected').text(); 
-    $("#slide-4-font").removeClass().addClass(fontFamily);
-    $("#slide-4-value").text("\""+fontFamilyName+"\"").addClass("capitalize");
+    $("#slide-5-font").removeClass().addClass(fontFamily);
+    $("#slide-5-value").text("\""+fontFamilyName+"\"").addClass("capitalize");
   });
-  //Slide 5 (font)
-  $("#slide-5 input[type=radio]").change(function() {
+  //Slide 6 (font)
+  $("#slide-6 input[type=radio]").change(function() {
     var fontStyle = this.value;
-    $("#slide-5-font").css("font-style", fontStyle);
-    $("#slide-5-style").text(fontStyle);
+    $("#slide-6-font").css("font-style", fontStyle);
+    $("#slide-6-style").text(fontStyle);
   });
-  $("#slide-5 input[type=range]").change(function() {       
+  $("#slide-6 input[type=range]").change(function() {       
     var fontSize = this.value;
-    $("#slide-5-font").css("font-size", fontSize+"px");
-    $("#slide-5-size").text(fontSize);
+    $("#slide-6-font").css("font-size", fontSize+"px");
+    $("#slide-6-size").text(fontSize);
   });
-  $("#slide-5 select").change(function() {     
-    var fontFamily5 = this.value;       
-    var fontFamilyName5 = $(this).find('option:selected').text(); 
-    $("#slide-5-font").removeClass().addClass(fontFamily5);
-    $("#slide-5-family").text("\""+fontFamilyName5+"\"").addClass("capitalize");
+  $("#slide-6 select").change(function() {     
+    var fontFamily6 = this.value;       
+    var fontFamilyName6 = $(this).find('option:selected').text(); 
+    $("#slide-6-font").removeClass().addClass(fontFamily6);
+    $("#slide-6-value").text("\""+fontFamilyName6+"\"").addClass("capitalize");
   });
 
   //Page setup on load

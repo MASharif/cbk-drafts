@@ -19,9 +19,6 @@ body {
 }
 
 /*Own*/
-figcaption{
-  margin-top: 2em;
-}
 figure{
   text-align: center;
 }
@@ -105,29 +102,32 @@ nav ul{
   margin-right: 2em;
   width: 40%;
 }
-/*#slide-1-font,*/
 #slide-2-font,
 #slide-3-font,
 #slide-4-font,
+#slide-5-font,
 #slide-5-font{
   border: 1px solid black;
   color: red;
   font: normal 40px serif;
   padding: 6px;
   text-align: center;
+  word-wrap: break-word;
 }
-#slide-1 figcaption,
-#slide-2 figcaption,
-#slide-3 figcaption,
-#slide-4 figcaption,
-#slide-5 figcaption{
+figcaption{
   background-color: rgba(255,255,0,0.3);
   border: 1px solid black;
   font: normal 40px serif;
+  margin-top: 2em;
   padding: 6px;
   text-align: left;
   text-indent: 2em;
   text-indent: 3vw;
+  word-wrap: break-word;
+}
+
+#slide-2 figcaption{
+  margin-top: 0;
 }
 #slide-1, #slide-1-font{
   font-size: 1.75em;

@@ -77,13 +77,12 @@ nav ul{
   float: right;
   margin: 4em 0 0 1em;
 }
-#slide-1 figcaption:before{
+/*#slide-1 figcaption:before{
   content: "\21D0";
-}
+}*/
 #slide-2-image img, #slide-3-image img, #slide-4-image img, #slide-5-image img{
   border: 20px solid #FF0000;
 }
-
 /*Input styling*/
 input[type='range'] {
     -webkit-appearance: none !important;
@@ -109,4 +108,10 @@ footer {
   margin-right: 5%;
   position: absolute;
   right: 0;
-} 
+}
+
+@media screen and (max-width: 1050px) { 
+/*  #slide-1 figcaption:before{
+    content: "\21D1";
+  }*/
+}
