@@ -112,6 +112,7 @@ nav ul{
   font: normal 40px serif;
   padding: 6px;
   text-align: center;
+  word-wrap: break-word;
 }
 figcaption{
   background-color: rgba(255,255,0,0.3);
